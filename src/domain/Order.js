@@ -20,7 +20,7 @@ class Order {
 
   getTotalWeight() {
     return this.items.reduce((total, item) => {
-      return total + item.product.weight * item.quantity;
+      return total + item.getTotalWeight();
     }, 0);
   }
 }

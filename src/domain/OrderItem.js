@@ -7,6 +7,10 @@ class OrderItem {
   getSubtotal() {
     return this.product.price * this.quantity;
   }
+
+  getTotalWeight() {
+    return this.product.weight * this.quantity;
+  }
 }
 
 module.exports = OrderItem;

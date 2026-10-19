@@ -1,3 +1,4 @@
+
 class Customer {
   constructor(id, name, email, phone, type, address) {
     this.id = id;
@@ -6,6 +7,14 @@ class Customer {
     this.phone = phone;
     this.type = type;
     this.address = address;
+  }
+
+  getCity() {
+    return this.address.getCity();
+  }
+
+  getState() {
+    return this.address.getState();
   }
 }
 
